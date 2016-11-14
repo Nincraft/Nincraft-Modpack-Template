@@ -4,20 +4,11 @@
 		<format>zip</format>
 	</formats>
 	<includeBaseDirectory>false</includeBaseDirectory>
+	<componentDescriptors>
+		<componentDescriptor>assemblies/component-common.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-client.xml</componentDescriptor>
+	</componentDescriptors>
 	<fileSets>
-		<fileSet>
-			<directory>common/base</directory>
-			<outputDirectory>/</outputDirectory>
-			<includes>
-				<include>loaders/*.*</include>
-				<include>mods/*.*</include>
-				<include>mods/${mcVersion}/*.*</include>
-				<include>scripts/*.*</include>
-			</includes>
-			<excludes>
-				<exclude>loaders/modpack.jar</exclude>
-			</excludes>
-		</fileSet>
 		<fileSet>
 			<directory>common/dev</directory>
 			<outputDirectory>/</outputDirectory>
@@ -29,19 +20,9 @@
 			</includes>
 		</fileSet>
 		<fileSet>
-			<directory>common/base/config</directory>
+			<directory>common/dev/config</directory>
 			<outputDirectory>/config</outputDirectory>
 			<filtered>true</filtered>
-		</fileSet>
-		<fileSet>
-			<directory>client/base</directory>
-			<outputDirectory>/</outputDirectory>
-			<includes>
-				<include>config/*.*</include>
-				<include>mods/*.*</include>
-				<include>mods/${mcVersion}/*.*</include>
-				<include>scripts/*.*</include>
-			</includes>
 		</fileSet>
 		<fileSet>
 			<directory>client/dev</directory>
@@ -54,7 +35,17 @@
 			</includes>
 		</fileSet>
 		<fileSet>
-			<directory>client/base/config</directory>
+			<directory>client/dev/nincraft</directory>
+			<outputDirectory>/</outputDirectory>
+			<includes>
+				<include>config/*.*</include>
+				<include>mods/*.*</include>
+				<include>mods/${mcVersion}/*.*</include>
+				<include>scripts/*.*</include>
+			</includes>
+		</fileSet>
+		<fileSet>
+			<directory>client/dev/config</directory>
 			<outputDirectory>/config</outputDirectory>
 			<filtered>true</filtered>
 		</fileSet>
