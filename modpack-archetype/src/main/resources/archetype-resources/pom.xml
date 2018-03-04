@@ -84,7 +84,7 @@
                         <dependencies>
                             <dependency>
                                 <groupId>com.nincraft</groupId>
-                                <artifactId>modpack-archetype</artifactId>
+                                <artifactId>modpack-assembly</artifactId>
                                 <version>${modpack.archetype.version}</version>
                             </dependency>
                         </dependencies>
@@ -123,7 +123,7 @@
                         <dependencies>
                             <dependency>
                                 <groupId>com.nincraft</groupId>
-                                <artifactId>modpack-archetype</artifactId>
+                                <artifactId>modpack-assembly</artifactId>
                                 <version>${modpack.archetype.version}</version>
                             </dependency>
                         </dependencies>
@@ -163,7 +163,7 @@
                         <dependencies>
                             <dependency>
                                 <groupId>com.nincraft</groupId>
-                                <artifactId>modpack-archetype</artifactId>
+                                <artifactId>modpack-assembly</artifactId>
                                 <version>${modpack.archetype.version}</version>
                             </dependency>
                         </dependencies>
@@ -202,7 +202,7 @@
                         <dependencies>
                             <dependency>
                                 <groupId>com.nincraft</groupId>
-                                <artifactId>modpack-archetype</artifactId>
+                                <artifactId>modpack-assembly</artifactId>
                                 <version>${modpack.archetype.version}</version>
                             </dependency>
                         </dependencies>
@@ -241,7 +241,7 @@
                         <dependencies>
                             <dependency>
                                 <groupId>com.nincraft</groupId>
-                                <artifactId>modpack-archetype</artifactId>
+                                <artifactId>modpack-assembly</artifactId>
                                 <version>${modpack.archetype.version}</version>
                             </dependency>
                         </dependencies>
