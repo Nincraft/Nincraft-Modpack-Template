@@ -5,18 +5,10 @@
 			<outputDirectory>/</outputDirectory>
 			<includes>
 				<include>loaders/*.*</include>
-				<include>mods/*.*</include>
-				<include>mods/${mcVersion}/*.*</include>
-				<include>scripts/*.*</include>
 			</includes>
 			<excludes>
 				<exclude>loaders/modpack.jar</exclude>
 			</excludes>
-		</fileSet>
-		<fileSet>
-			<directory>common/base/config</directory>
-			<outputDirectory>/config</outputDirectory>
-			<filtered>true</filtered>
 		</fileSet>
 	</fileSets>
 </component>

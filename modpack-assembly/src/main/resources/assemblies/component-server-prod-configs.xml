@@ -1,0 +1,9 @@
+<component>
+	<fileSets>
+		<fileSet>
+			<directory>server/prod/config</directory>
+			<outputDirectory>/config</outputDirectory>
+			<filtered>true</filtered>
+		</fileSet>
+	</fileSets>
+</component>
