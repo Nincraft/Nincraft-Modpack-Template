@@ -14,19 +14,19 @@ del /s /q "server\prod\mods\*.jar"
 for /f "delims=" %%i IN ('dir *.jar /b') DO set modpackdownloader=%%i
 
 :: Download Forge
-java -jar "%modpackdownloader%" -manifest common/base/forge.json -folder common/base/loaders
+java -jar "%modpackdownloader%" -manifest modpack.json          -folder common/base/loaders
 
 :: Download All Common Mods
-java -jar "%modpackdownloader%" -manifest common/dev/mods.json -folder common/dev/mods
+java -jar "%modpackdownloader%" -manifest common/dev/mods.json  -folder common/dev/mods
 java -jar "%modpackdownloader%" -manifest common/base/mods.json -folder common/base/mods
 java -jar "%modpackdownloader%" -manifest common/prod/mods.json -folder common/prod/mods
 
 :: Download All Client Mods
-java -jar "%modpackdownloader%" -manifest client/dev/mods.json -folder client/dev/mods
+java -jar "%modpackdownloader%" -manifest client/dev/mods.json  -folder client/dev/mods
 java -jar "%modpackdownloader%" -manifest client/base/mods.json -folder client/base/mods
 java -jar "%modpackdownloader%" -manifest client/prod/mods.json -folder client/prod/mods
 
 :: Download All Server Mods
-java -jar "%modpackdownloader%" -manifest server/dev/mods.json -folder server/dev/mods
+java -jar "%modpackdownloader%" -manifest server/dev/mods.json  -folder server/dev/mods
 java -jar "%modpackdownloader%" -manifest server/base/mods.json -folder server/base/mods
 java -jar "%modpackdownloader%" -manifest server/prod/mods.json -folder server/prod/mods

@@ -2,9 +2,14 @@
 <archetype-descriptor name="basic">
     <requiredProperties>
         <requiredProperty key="minecraft-version"/>
+        <requiredProperty key="forge-version"/>
         <requiredProperty key="pack-name"/>
+        <requiredProperty key="pack-author"/>
     </requiredProperties>
     <fileSets>
+        <fileSet filtered="false" packaged="false">
+            <directory>.mvn</directory>
+        </fileSet>
         <fileSet filtered="false" packaged="false">
             <directory>client</directory>
         </fileSet>
@@ -20,8 +25,16 @@
         <fileSet filtered="false" packaged="false">
             <directory/>
             <includes>
+                <include>.gitignore</include>
+                <include>mvnw*</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="false">
+            <directory/>
+            <includes>
                 <include>*.bat</include>
                 <include>*.md</include>
+                <include>*.json</include>
             </includes>
         </fileSet>
     </fileSets>

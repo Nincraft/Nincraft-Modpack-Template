@@ -5,14 +5,16 @@
     <version>${version}</version>
     <name>${pack-name}</name>
     <url>http://maven.apache.org</url>
+    <description>Modpack Description</description>
     <packaging>pom</packaging>
     <properties>
+        <packAuthor>${pack-author}</packAuthor>
         <mcVersion>${minecraft-version}</mcVersion>
         <build.number>SNAPSHOT</build.number>
-		<launcher.name.dev/>
-		<launcher.title.dev/>
+        <launcher.name.dev/>
+        <launcher.title.dev/>
         <modpack.archetype.version>0.2-SNAPSHOT</modpack.archetype.version>
-		<maven-assembly-plugin.version>2.6</maven-assembly-plugin.version>
+        <maven-assembly-plugin.version>2.6</maven-assembly-plugin.version>
     </properties>
     <build>
         <resources>
@@ -44,7 +46,7 @@
                         <dependencies>
                             <dependency>
                                 <groupId>com.nincraft</groupId>
-                                <artifactId>modpack-archetype</artifactId>
+                                <artifactId>modpack-assembly</artifactId>
                                 <version>${modpack.archetype.version}</version>
                             </dependency>
                         </dependencies>
@@ -187,7 +189,7 @@
             </build>
         </profile>
         <profile>
-            <id>client-ftb</id>
+            <id>client-curse</id>
             <activation>
                 <property>
                     <name>profile.master</name>
@@ -208,53 +210,14 @@
                         </dependencies>
                         <executions>
                             <execution>
-                                <id>client-ftb</id>
+                                <id>client-curse</id>
                                 <phase>package</phase>
                                 <goals>
                                     <goal>single</goal>
                                 </goals>
                                 <configuration>
                                     <descriptorRefs>
-                                        <descriptorRef>assembly-client-ftb</descriptorRef>
-                                    </descriptorRefs>
-                                </configuration>
-                            </execution>
-                        </executions>
-                        <configuration/>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-        <profile>
-            <id>client-technic</id>
-            <activation>
-                <property>
-                    <name>profile.master</name>
-                </property>
-            </activation>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-assembly-plugin</artifactId>
-                        <version>${maven-assembly-plugin.version}</version>
-                        <dependencies>
-                            <dependency>
-                                <groupId>com.nincraft</groupId>
-                                <artifactId>modpack-assembly</artifactId>
-                                <version>${modpack.archetype.version}</version>
-                            </dependency>
-                        </dependencies>
-                        <executions>
-                            <execution>
-                                <id>client-technic</id>
-                                <phase>package</phase>
-                                <goals>
-                                    <goal>single</goal>
-                                </goals>
-                                <configuration>
-                                    <descriptorRefs>
-                                        <descriptorRef>assembly-client-technic</descriptorRef>
+                                        <descriptorRef>assembly-client-curse</descriptorRef>
                                     </descriptorRefs>
                                 </configuration>
                             </execution>
@@ -265,24 +228,24 @@
             </build>
         </profile>
     </profiles>
-	<repositories>
-		<repository>
-			<id>releases</id>
-			<url>http://play.nincraft.com:8081/nexus/content/repositories/releases/</url>
-		</repository>
-		<repository>
-			<id>snapshots</id>
-			<url>http://play.nincraft.com:8081/nexus/content/repositories/snapshots/</url>
-		</repository>
-	</repositories>
-	<pluginRepositories>
-		<pluginRepository>
-			<id>releases</id>
-			<url>http://play.nincraft.com:8081/nexus/content/repositories/releases/</url>
-		</pluginRepository>
-		<pluginRepository>
-			<id>snapshots</id>
-			<url>http://play.nincraft.com:8081/nexus/content/repositories/snapshots/</url>
-		</pluginRepository>
-	</pluginRepositories>
+    <repositories>
+        <repository>
+            <id>releases</id>
+            <url>http://dev.nincraft.com:8081/nexus/content/repositories/releases/</url>
+        </repository>
+        <repository>
+            <id>snapshots</id>
+            <url>http://dev.nincraft.com:8081/nexus/content/repositories/snapshots/</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>releases</id>
+            <url>http://dev.nincraft.com:8081/nexus/content/repositories/releases/</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>snapshots</id>
+            <url>http://dev.nincraft.com:8081/nexus/content/repositories/snapshots/</url>
+        </pluginRepository>
+    </pluginRepositories>
 </project>

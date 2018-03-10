@@ -1,0 +1,21 @@
+{
+  "minecraft": {
+    "version": "${mcVersion}",
+    "modLoaders": [
+      {
+        "id": "forge-${forge-version}",
+        "primary": true,
+        "downloadInstaller": true,
+        "downloadUniversal": true,
+        "renameUniversal": "modpack.jar",
+        "name": "forge",
+        "folder": "common/base/loaders"
+      }
+    ]
+  },
+  "manifestType": "minecraftModpack",
+  "manifestVersion": 1,
+  "name": "${project.name}",
+  "version": "${project.version}",
+  "author": "${packAuthor}"
+}
