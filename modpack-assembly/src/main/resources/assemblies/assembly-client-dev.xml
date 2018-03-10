@@ -5,35 +5,21 @@
 	</formats>
 	<includeBaseDirectory>false</includeBaseDirectory>
 	<componentDescriptors>
-		<componentDescriptor>assemblies/component-common.xml</componentDescriptor>
-		<componentDescriptor>assemblies/component-client.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-common-base-configs.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-common-base-forge.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-common-base-mods.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-common-base-scripts.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-common-dev-configs.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-common-dev-mods.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-common-dev-scripts.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-client-base-configs.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-client-base-mods.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-client-base-scripts.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-client-dev-configs.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-client-dev-mods.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-client-dev-scripts.xml</componentDescriptor>
 	</componentDescriptors>
 	<fileSets>
-		<fileSet>
-			<directory>common/dev</directory>
-			<outputDirectory>/</outputDirectory>
-			<includes>
-				<include>config/*.*</include>
-				<include>mods/*.*</include>
-				<include>mods/${mcVersion}/*.*</include>
-				<include>scripts/*.*</include>
-			</includes>
-		</fileSet>
-		<fileSet>
-			<directory>common/dev/config</directory>
-			<outputDirectory>/config</outputDirectory>
-			<filtered>true</filtered>
-		</fileSet>
-		<fileSet>
-			<directory>client/dev</directory>
-			<outputDirectory>/</outputDirectory>
-			<includes>
-				<include>config/*.*</include>
-				<include>mods/*.*</include>
-				<include>mods/${mcVersion}/*.*</include>
-				<include>scripts/*.*</include>
-			</includes>
-		</fileSet>
 		<fileSet>
 			<directory>client/dev/nincraft</directory>
 			<outputDirectory>/</outputDirectory>
@@ -43,11 +29,6 @@
 				<include>mods/${mcVersion}/*.*</include>
 				<include>scripts/*.*</include>
 			</includes>
-		</fileSet>
-		<fileSet>
-			<directory>client/dev/config</directory>
-			<outputDirectory>/config</outputDirectory>
-			<filtered>true</filtered>
 		</fileSet>
 	</fileSets>
 </assembly>

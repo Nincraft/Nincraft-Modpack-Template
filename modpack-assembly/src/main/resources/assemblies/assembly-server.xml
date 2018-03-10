@@ -5,35 +5,18 @@
 	</formats>
 	<includeBaseDirectory>false</includeBaseDirectory>
 	<componentDescriptors>
-		<componentDescriptor>assemblies/component-common.xml</componentDescriptor>
-		<componentDescriptor>assemblies/component-server.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-common-base-configs.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-common-base-forge.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-common-base-mods.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-common-base-scripts.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-common-prod-configs.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-common-prod-mods.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-common-prod-scripts.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-server-base-configs.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-server-base-mods.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-server-base-scripts.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-server-prod-configs.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-server-prod-mods.xml</componentDescriptor>
+		<componentDescriptor>assemblies/component-server-prod-scripts.xml</componentDescriptor>
 	</componentDescriptors>
-	<fileSets>
-		<fileSet>
-			<directory>common/prod</directory>
-			<outputDirectory>/</outputDirectory>
-			<includes>
-				<include>mods/*.*</include>
-				<include>mods/${mcVersion}/*.*</include>
-				<include>scripts/*.*</include>
-			</includes>
-		</fileSet>
-		<fileSet>
-			<directory>server/prod</directory>
-			<outputDirectory>/</outputDirectory>
-			<includes>
-				<include>mods/*.*</include>
-				<include>mods/${mcVersion}/*.*</include>
-				<include>scripts/*.*</include>
-			</includes>
-		</fileSet>
-		<fileSet>
-			<directory>server/prod</directory>
-			<outputDirectory>/</outputDirectory>
-			<filtered>true</filtered>
-			<includes>
-				<include>*.properties</include>
-			</includes>
-		</fileSet>
-	</fileSets>
 </assembly>

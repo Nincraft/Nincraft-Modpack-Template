@@ -1,0 +1,11 @@
+<component>
+	<fileSets>
+		<fileSet>
+			<directory>common/base</directory>
+			<outputDirectory>/</outputDirectory>
+			<includes>
+				<include>scripts/*.*</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+</component>
