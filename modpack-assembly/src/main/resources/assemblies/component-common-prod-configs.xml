@@ -1,9 +1,9 @@
 <component>
-	<fileSets>
-		<fileSet>
-			<directory>common/prod/config</directory>
-			<outputDirectory>/config</outputDirectory>
-			<filtered>true</filtered>
-		</fileSet>
-	</fileSets>
+    <fileSets>
+        <fileSet>
+            <directory>common/prod/config</directory>
+            <outputDirectory>config</outputDirectory>
+            <filtered>true</filtered>
+        </fileSet>
+    </fileSets>
 </component>

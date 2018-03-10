@@ -1,11 +1,8 @@
 <component>
-	<fileSets>
-		<fileSet>
-			<directory>client/base</directory>
-			<outputDirectory>/</outputDirectory>
-			<includes>
-				<include>scripts/*.*</include>
-			</includes>
-		</fileSet>
-	</fileSets>
+    <fileSets>
+        <fileSet>
+            <directory>client/base/scripts</directory>
+            <outputDirectory>scripts</outputDirectory>
+        </fileSet>
+    </fileSets>
 </component>

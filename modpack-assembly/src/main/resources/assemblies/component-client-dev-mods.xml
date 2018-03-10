@@ -1,12 +1,15 @@
 <component>
-	<fileSets>
-		<fileSet>
-			<directory>client/dev</directory>
-			<outputDirectory>/</outputDirectory>
-			<includes>
-				<include>mods/*.*</include>
-				<include>mods/${mcVersion}/*.*</include>
-			</includes>
-		</fileSet>
-	</fileSets>
+    <fileSets>
+        <fileSet>
+            <directory>client/dev/mods</directory>
+            <outputDirectory>mods</outputDirectory>
+            <includes>
+                <include>*.jar</include>
+                <include>${mcVersion}/*.jar</include>
+            </includes>
+            <excludes>
+                <exclude>thirdParty/*.jar</exclude>
+            </excludes>
+        </fileSet>
+    </fileSets>
 </component>
