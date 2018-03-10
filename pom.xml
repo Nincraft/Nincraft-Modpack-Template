@@ -6,6 +6,11 @@
 	<version>0.2-SNAPSHOT</version>
 	<name>Nincraft Modpack Template</name>
 	<url>http://maven.apache.org</url>
+	<packaging>pom</packaging>
+	<modules>
+		<module>modpack-assembly</module>
+		<module>modpack-archetype</module>
+	</modules>
 	<distributionManagement>
 		<repository>
 			<id>releases</id>

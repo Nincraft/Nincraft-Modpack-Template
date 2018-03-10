@@ -1,22 +1,13 @@
 Nincraft Modpack Template
 ===
-This repository is here to serve as a blank modpack template for all Nincraft Modpacks.
+This repository is here to serve as a modpack template for all Nincraft Modpacks. This includes a Maven archetype for generating templates via command line and a Maven assembly descriptor jar for general final zip file packaging.
 
-Mod List
+Usage
 ===
-[Current Mod List](https://github.com/Nincraft/Nincraft-Modpack-Template/blob/master/Versions.md)
-
-Modpack Permissions
-===
-[Permission List](https://github.com/Nincraft/Nincraft-Modpack-Template/blob/master/Permissions.md)
-
-Modpack Requirements
-===
-Here's where you would put the runtime requirements for your modpack.
-
-Installation
-===
-Here's where you would put the installation instructions for the various launchers your modpack can be found on.
+- Install the archetype in your local Maven repository by running "mvn clean install" on the project
+- Navigate to an empty directory and run "mvn archetype:generate -DarchetypeGroupId=com.nincraft -DarchetypeArtifactId=modpack-archetype"
+  - Note, you may need to put quotes around the options if you're running this in Windows
+- Answer the prompts for the groupId, artifactId, pack version, Minecraft version, and pack name  
 
 Contributing
 ===

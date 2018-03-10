@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor name="basic">
+    <requiredProperties>
+        <requiredProperty key="minecraft-version"/>
+        <requiredProperty key="pack-name"/>
+    </requiredProperties>
+    <fileSets>
+        <fileSet filtered="false" packaged="false">
+            <directory>client</directory>
+        </fileSet>
+        <fileSet filtered="false" packaged="false">
+            <directory>common</directory>
+        </fileSet>
+        <fileSet filtered="false" packaged="false">
+            <directory>server</directory>
+        </fileSet>
+        <fileSet filtered="false" packaged="false">
+            <directory>launcher</directory>
+        </fileSet>
+        <fileSet filtered="false" packaged="false">
+            <directory/>
+            <includes>
+                <include>*.bat</include>
+                <include>*.md</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</archetype-descriptor>
